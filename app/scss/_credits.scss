@@ -1,0 +1,55 @@
+.credits {
+    h1 {
+        margin-bottom: 0;
+
+        @include breakpoint-down(small) {
+            font-size: 2.5rem;
+        }
+    }
+
+    h3 {
+        margin: 1rem;
+    }
+
+    h4 {
+        margin-top: 0.5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__row {
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__people {
+        flex: 1;
+    }
+
+    &__institutions {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 100%;
+            padding: 1rem;
+
+            @include breakpoint-up(large) {
+                width: 35rem;
+                transition: scale 300ms ease-in-out;
+
+                &:hover {
+                    scale: 1.02;
+                }
+            }
+        }
+    }
+
+    &__pg {
+        border-radius: 1.5rem;
+
+        @include breakpoint-up(large) {
+            border-radius: 2rem;
+        }
+    }
+}

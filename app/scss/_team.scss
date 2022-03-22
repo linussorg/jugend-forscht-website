@@ -1,0 +1,61 @@
+.team {
+    &__img {
+        width: 100%;
+
+        @include breakpoint-down(small) {
+            content: url('/images/team_compact.png') ;
+        }
+    }
+
+    &__column {
+        max-width: 90rem;
+        margin: auto;
+    }
+
+    &__name-col {
+        margin-right: 3%;
+        margin-left: 3%;        
+        max-width: 21rem;
+
+        @include breakpoint-up(large) {
+            margin-left: 6%;
+            margin-right: 6%;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__name {
+        background-color: var(--on-elevated);
+        color: var(--elevated);
+        font-weight: 600;
+        margin: 0;
+        border-radius: 0.3125rem;
+        padding: 0.5rem;
+
+        @include breakpoint-down(small) {
+            font-size: 1.2rem;
+        }
+
+        @include breakpoint-up(large) {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-radius: 0.625rem;
+        }
+        
+    }
+
+    &__row {
+        max-width: 90rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: -2rem;
+
+        @include breakpoint-up(large) {
+            top: -3rem;
+        }
+    }
+}

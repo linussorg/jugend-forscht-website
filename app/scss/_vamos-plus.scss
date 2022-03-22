@@ -1,0 +1,31 @@
+.vamos-plus {
+    &__subheading {
+        font-weight: 500;
+    }
+
+    &__item {
+        @include breakpoint-up(medium) {
+            flex: 0 0 50%;
+            padding: 1rem;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 0 0 25%;
+        }        
+    }
+
+    &__grid {
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @include breakpoint-up(large) {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.github-icon {
+    max-width: 1.5rem;
+}

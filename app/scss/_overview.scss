@@ -1,0 +1,19 @@
+.overview {
+    &__item {
+        img {
+            width: 100%;
+        }
+
+        @include breakpoint-up(large) {
+            padding: 1rem;
+            flex: 0 0 50%;
+        }
+    }
+
+    &__grid {
+        @include breakpoint-up(large) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }    
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Jugend forscht | Linus Sorg</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="flex flex-jc-sb">
+            <a class="header__logo" href="https://www.linus-sorg.com/">Linus Sorg</a>
+            <!-- <div class="header__links">
+                <a href="https://photography.linus-sorg.com/">Film und Fotografie</a><a href="https://jugend-forscht.linus-sorg.com/">Jugend forscht</a><a href="https://www.linus-sorg.com/contact/">Kontakt</a>
+            </div>
+
+            <a id="btnHamburger" href="#" class="header__toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a> -->
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero__text container">
+            <h1>Meteore</h1>
+            <h3>Untersucht mit Video
+                <span class="material-icons hero-icon" style="font-size:2.25rem;">smart_display</span>
+                und Radio
+                <span class="material-icons hero-icon" style="font-size:2.25rem;">sensors</span>
+            </h3>
+            <button id="hero-cta" class="button__cta__primary">
+                <span class="material-icons cta-icon">keyboard_double_arrow_down</span>
+                Mehr erfahren
+            </button>
+        </div>
+
+        <div class="hero__img"></div>
+    </section>
+
+    <section id="overview" class="overview container">
+        <h2><strong>Was</strong> steckt dahinter?</h2>
+        <div class="overview__grid">
+            <div class="overview__item">
+                <h4>Meteore (Sternschnuppen) können Radiosignale von Sendern hinter dem Horizont reflektieren.</h4>
+                <img src="/images/meteor_scattering.png" alt="Ein Radiosignal wird durch einen Meteor (Sternschnuppe) gestreut">
+            </div>
+            <div class="overview__item">
+                <h4>Bei synchroner Aufnahme von Video- und Radiomaterial können beide Signale zeitlich verglichen werden.</h4>
+                <img src="/images/timeline.png" alt="Vergleichsdiagramm von Video- und Radiosignal">
+            </div>
+            <div class="overview__item">
+                <h4>Zur automatisierten Auswertung der Videos wurde
+                    <span><img style="max-height: 1.75rem; width: auto; position: relative; top: 0.125rem;" src="/images/vamos_plus_logo_white.png" alt="VAMOS+"></span>
+                    , eine Software zur Meteorerkennung, entwickelt.</h4>
+                <img src="/images/vamos+_ui.png" alt="VAMOS+ Benutzeroberfläche">
+            </div>
+            <div class="overview__item">
+                <h4>Die Erkennung wird durch eine speziell auf Meteore trainierte Künstliche Intelligenz ermöglicht.</h4>
+                <img src="/images/detection.jpg" alt="KI erkennt Meteor">
+            </div>
+        </div>
+    </section>
+
+    <section class="vamos-plus container">
+        <h2>Was ist <span><img style="max-height: 3rem; width: auto; position: relative; top: 0.0625rem; left: -0.5rem;" src="/images/vamos_plus_logo_white.png" alt="VAMOS+"></span>?</h2>
+        <div class="vamos-plus__grid">
+            <div class="vamos-plus__item">
+                <h3 class="vamos-plus__subheading">Zuverlässig.</h3>
+                <h4>VAMOS+ findet Dank einer spezialisierten Künstlichen Intelligenz bis zu 40 % mehr Meteore als ein herkömmlicher Algorithmus ohne KI.</h4>
+                <!-- <button class="button__cta__secondary">
+                    <span class="material-icons cta-icon">compare</span>
+                    Vergleiche ansehen
+                </button> -->
+            </div>
+            <div class="vamos-plus__item">
+                <h3 class="vamos-plus__subheading">Open Source.</h3>
+                <h4>Der gesamte Quellcode von VAMOS+ ist öffentlich zugänglich - für mehr Transparenz.</h4>
+                <!-- <button class="button__cta__secondary" onclick="window.open('https://www.github.com/linussorg/vamos')">
+                    <span class="cta-icon"><img class="github-icon" src="/images/github.svg" alt="Github"></span>
+                    Auf GitHub ansehen
+                </button> -->
+                <a class="button__cta__secondary" href="https://www.github.com/linussorg/vamos" target="_blank">
+                    <span class="cta-icon"><img class="github-icon" src="/images/github.svg" alt="Github"></span>
+                    Auf GitHub ansehen
+                </a>
+            </div>
+            <div class="vamos-plus__item">
+                <h3 class="vamos-plus__subheading">Schnell.</h3>
+                <h4>VAMOS+ kann mit einer CPU bis zu 8 Bilder pro Sekunde auswerten. Mit GPU sind es sogar bis zu 20.</h4>
+                <!-- <button class="button__cta__secondary">
+                    <span class="material-icons cta-icon">speed</span>
+                    Benchmarks ansehen
+                </button> -->
+            </div>
+            <div class="vamos-plus__item">
+                <h3 class="vamos-plus__subheading">Kostenlos.</h3>
+                <h4>VAMOS+ ist für jegliche Benutzung kostenlos!</h4>
+                <!-- <button class="button__cta__big">
+                    <span class="material-icons cta-icon-big" style="font-size:1.8125rem;">download</span>
+                    Download
+                </button> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="team container">
+        <h2><strong>Wer</strong> steckt dahinter?</h2>
+        <div class="team__column">
+            <img src="/images/team.jpg" alt="Till Eissler und Linus Sorg" class="team__img">
+            <div class="team__row">
+                <div class="team__name-col">
+                    <h2 class="team__name">Till Eissler</h2>
+                    <p>Begeistert sich besonders für Astronomie 💫</p>
+                </div>
+                <div class="team__name-col">
+                    <h2 class="team__name">Linus Sorg</h2>
+                    <p>Begeistert sich besonders für Informatik 💻</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infos container">
+        <h2>Weitere Infos</h2>
+        <div class="infos__papers">
+            <h3>Schriftliche Arbeiten:</h3>
+            <div class="infos__papers__grid">
+                <a href="/files/Schriftliche-Arbeit-2022.pdf" class="infos__papers__grid__item">
+                    <img src="/images/Schriftliche-Arbeit-2022-thumb.png" alt="Schriftliche Arbeit 2022">
+                </a>
+                <a href="/files/Schriftliche-Arbeit-2021.pdf" class="infos__papers__grid__item">
+                    <img src="/images/Schriftliche-Arbeit-2021-thumb.png" alt="Schriftliche Arbeit 2021">
+                </a>
+                <a href="/files/Schriftliche-Arbeit-2020.pdf" class="infos__papers__grid__item">
+                    <img src="/images/Schriftliche-Arbeit-2020-thumb.png" alt="Schriftliche Arbeit 2020">
+                </a>
+            </div>
+        </div>
+        <div class="infos__videos">
+            <h3>Kurzvideos:</h3>
+            <div class="infos__videos__item">
+                <h3>2022:</h3>
+                <img id="video-22-thumb" src="/images/Video-2022-thumb.jpg" alt="Kurzvideo zum Projekt von 2022">
+            </div>
+            <div class="infos__videos__item">
+                <h3>2021:</h3>
+                <img id="video-21-thumb" src="/images/Video-2021-thumb.jpg" alt="Kurzvideo zum Projekt von 2021">
+            </div>
+        </div>
+    </section>
+
+    <section class="credits container">
+        <h2><strong>Vielen Dank an</strong></h2>
+        <h1>TILL CREDNER</h1>
+        <h4>(Projektbetreuer, Progymnasium Rosenfeld)</h4>
+        <div class="credits__row">
+            <div class="credits__people">
+                <h3>Martin Eissler</h3>
+                <h3>Bruno & Johanna Nelles</h3>
+                <h3>Denis Mrsa</h3>
+                <h3>Marianne Gaiselmann</h3>
+                <h3>Armin Sorg</h3>
+                <h3>Lucien Smarsly</h3>
+                <h3>Sven-Alexander Schuch</h3>
+                <h3>Klaus Wettki</h3>
+            </div>
+            <div class="credits__institutions">
+                <h3>Finanziell unterstützt durch:</h3>
+                <a target="_blank" href="https://www.sparkasse-zollernalb.de/"><img src="/images/sparkasse.png" alt="Sparkasse Zollernalb"></a>
+                <a target="_blank" href="https://www.blickle.de/"><img src="/images/blickle.png" alt="Blickle Räder+Rollen Rosenfeld"></a>
+                <a target="_blank" href="https://www.pgrosenfeld.de/"><img class="credits__pg" src="/images/pgrosenfeld.png" alt="Progymnasium Rosenfeld"></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__copyright">
+            © 2022 Linus Sorg. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    
+
+    <script src="/app/js/script.js"></script>
+</body>
+</html>

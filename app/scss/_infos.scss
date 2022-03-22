@@ -1,0 +1,47 @@
+.infos {
+    &__papers {
+        &__grid {
+            @include breakpoint-up(medium) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+
+            &__item {
+                @include breakpoint-up(medium) {
+                    margin: 2rem;
+                }
+
+                img {
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    border-radius: 0.4rem;
+
+                    @include breakpoint-up(medium) {
+                        width: 30rem;
+                        border-radius: 0.625rem;
+                        transition: scale 300ms ease-in-out;
+                        margin: 0;
+
+                        &:hover {
+                            scale: 1.03;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__videos {
+        &__item {
+            img {
+                width: 100%;
+                @include breakpoint-up(large) {
+                    width: 90rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
