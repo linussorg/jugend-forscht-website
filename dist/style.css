@@ -371,7 +371,7 @@ h4 {
 
 @media (max-width: 39.9375em) {
   .team__img {
-    content: url("/images/team_compact.png");
+    content: url("/images/team_compact.jpg");
   }
 }
 

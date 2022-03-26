@@ -3,7 +3,7 @@
         width: 100%;
 
         @include breakpoint-down(small) {
-            content: url('/images/team_compact.png') ;
+            content: url('/images/team_compact.jpg') ;
         }
     }
 
