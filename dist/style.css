@@ -271,7 +271,7 @@ h4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 100vh;
+    min-height: calc(100vh - 4rem);
     width: 60%;
   }
 }
